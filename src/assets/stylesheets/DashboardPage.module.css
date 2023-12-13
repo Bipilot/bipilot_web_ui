@@ -1,0 +1,80 @@
+/* DashboardPage.module.css */
+.dashboardContainer {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .tabBar {
+    width: 200px; /* Adjust the width as needed */
+    background-color: #ffffff; /* White background for the tab bar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for some depth */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the tabs to the start of the aside */
+  }
+  
+  .tabList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* This ensures the full height is used for the list */
+  }
+  
+  .tabBar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Ensures the full width of the aside is used */
+  }
+  
+  .tabBar li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem; /* Added padding for better touch */
+    cursor: pointer;
+    text-align: left; /* Aligns text to the left */
+    width: 100%; /* Ensures the hover effect takes the full width */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .tabBar li:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    padding: 2rem; /* Adjust the padding as needed */
+    background-color: #f7f7f7; /* Light gray background for the main content */
+  }
+
+  .ProfileItem {
+    margin-top: auto; /* This will push the logout button to the bottom */
+    border-top: 1px solid #ececec; /* Optional: add a separator */
+  }
+ 
+  
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .dashboardContainer {
+      flex-direction: column;
+    }
+  
+    .mainContent, .tabBar {
+      width: 100%;
+    }
+  
+    .tabBar {
+      height: auto;
+      padding: 0.5rem;
+      align-items: center; /* Center the tabs in mobile view */
+    }
+  }
+  
