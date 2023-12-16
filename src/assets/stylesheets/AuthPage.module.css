@@ -10,13 +10,15 @@
 
 .form {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   margin: 0 auto;
   padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 50px;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
 }
 
 .input {
@@ -57,8 +59,39 @@
   margin-top: 1rem;
 }
 
-.toggleButton:hover {
+/* .toggleButton:hover {
   color: #0056b3;
+} */
+
+.instagramAuthButton {
+  background-color: #fff;
+  color: #5851db; /* Instagram brand color */
+  /* padding: 10px 15px; */
+  border-radius: 2px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* .instagramAuthButton:hover {
+  box-shadow: 0 0 6px #5851db;
+} */
+
+/* .instagramAuthButton:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 3px #4285f4;
+} */
+
+.logo {
+  margin-right: 10px;
+  width: 20px; /* Adjust size as needed */
+  height: auto;
 }
 
 /* Responsive styling */
